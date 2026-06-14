@@ -1,0 +1,239 @@
+/* Define estilização do corpo do site */
+body {
+    color: white;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Define estilização do corpo do site quando estiver com tema claro */
+body.contraste {
+    color: black;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Define estilização do botão menu */
+.botão-menu {
+    background-color: rgb(73, 137, 160);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+}
+/* Define estilização do botão menu quando estiver com tema claro */
+.botão-menu.contraste {
+    background-color: rgb(82, 174, 207);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+/* Esconde o botão quando o menu estiver ativo */
+.botão-menu.ativo {
+    right: -320px;
+}
+/* Define estilização do botão fechar menu */
+.fechar-menu.ativo {
+    background-color: rgb(73, 137, 160);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+}
+/* Muda a cor dos botões quando passar o mouse */
+.fechar-menu.ativo:hover {
+    background-color: rgb(82, 174, 207);
+}
+.botão-menu:hover {
+    background-color: rgb(82, 174, 207);
+}
+.fechar-menu.ativo:hover {
+    background-color: rgb(82, 174, 207);
+}
+/* Define estilização do botão fechar menu quando estiver com tema claro */
+.fechar-menu.ativo.contraste {
+    background-color: rgb(139, 203, 227);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+/* Esconde o botão fechar menu quando o menu não estiver desativo */
+.fechar-menu {
+    position: fixed;
+    right: -320px;
+}
+/* Define estilização e esconde o menu */
+.menu-lateral {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: darkslategrey;
+    transition: 0.5s ease;
+    z-index: 4;
+    box-shadow: 0 0 20px black;
+}
+/* Define estilização e esconde o menu quando estiver com tema claro */
+.menu-lateral.contraste {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(80, 132, 132);
+    transition: 0.5s ease;
+    z-index: 4;
+    box-shadow: 0 0 20px black;
+}
+/* Ativa o menu */
+.menu-lateral.ativo {
+    right: 0;
+}
+/* Esconde define estilização dos botões do menu */
+.menu-lateral ul {
+list-style-type: none;
+padding: 0;
+margin-top: 90px;
+}
+.menu-lateral ul li {
+    flex: 1;
+    line-height: 1.2;
+}
+.menu-lateral ul li button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+/* Define estilização dos botões do menu quando estiver com o tema claro */
+.menu-lateral.contraste ul li button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+.menu-lateral ul li button i {
+    padding: 15px 30px;
+    size: 24px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.menu-lateral ul li:hover {
+    background-color: cadetblue;
+}
+/* Define estilização dos links */
+a{
+    color: white;
+    text-decoration: none;
+}
+/* Define estilização  e centraliza a imagem no header */
+header img{
+    width: 9.4em;
+    height: 9.4em;
+}
+.centro {
+text-align: center;
+}
+/* Define estilização do título */
+h1 {
+    font-size: 1.5em;
+    color: rgb(2, 240, 2);
+}
+/* Define estilização do footer */
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+footer img{
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 50%;
+    border: 2px solid white;    
+}
+footer {
+    size: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+}
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+/* Adiciona espaçamento das laterais do texto */
+.CorpoTexto {
+    padding: 0px 50px;
+}
+/* Adapta o site para celular */
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }}
+@media (max-width: 600px) {
+    .CorpoTexto {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 600px) {
+    .menu-lateral {
+        width: 80%; 
+        left: -80%;
+    }
+    
+    .menu-lateral.ativo {
+        left: 0;
+    }
+}
