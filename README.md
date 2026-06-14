@@ -1,4 +1,4 @@
-# 🌱 Agro Forte e Futuro Sustentável
+# A evolução da agricultura e seus impactos no meio ambiente.
 
 Projeto desenvolvido para o **Concurso Agrinho 2026**, com o tema **"Agro Forte e Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente"**.
 
